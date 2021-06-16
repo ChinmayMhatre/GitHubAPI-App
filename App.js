@@ -27,7 +27,7 @@ const App = () => {
      let url = `https://api.github.com/users/${username.toLowerCase()}` 
      const {data} = await axios.get(url)
      setDetails(data)
-    //  setusername("")
+     setusername("")
     }catch{
       setDetails("Not Found")
       setusername("")
